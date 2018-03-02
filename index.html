@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+              mode: 'fade',
+              captions: true,
+              auto: true,
+              autoControls: true,
+              stopAutoOnClick: true,
+              pager: true,
+              slideWidth: 375
+          });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header section -->
+        <header>
+            <img src="images/miamisburg.jpg">
+            <h3>Welcome to Miamisburg!</h3>
+            <nav>
+                <ul>
+                    <li><a href="mobile.html">Mobile View</a></li>
+                    <li>|</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Information</a></li>
+                    <li><a href="government.html">Government</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Main content section -->
+        <section class="content">
+            <article>
+                <h3 style="text-align: center;">Official Website of Miamisburg, Ohio</h3>
+                <p style="text-align: center;">Thanks for visiting our website! Here you can find all kinds of information about the city, how you can contact the city, view some frequently asked questions about Miamisburg, as well as so much more! Please enjoy browsing the site and we hope to see you soon! Here are just some of the beautiful views you can see when you can come visit:</p>
+                <center><div class="slider">
+                    <div><img src="images/arch.jpg"></div>
+                    <div><img src="images/market.jpg"></div>
+                    <div><img src="images/mural.jpg"></div>
+                    <div><img src="images/dtown.JPG"></div>
+                    <div><img src="images/mound.jpg"></div>
+                    <div><img src="images/plaza.jpg"></div>
+                </div></center>
+            </article>
+            <h3 style="text-align: center; border-top: 1px solid #eeeeee; padding-top: 20px;">Events</h3>
+            <p style="text-align: center;">Check out our community events!</p>
+            <p style="text-align: center;">Numerous community events are held during the year, such as live music and block parties. Every spring, 'Spring Break in the Burg' and the 'Spring Fling' festival is held downtown in Library Park. On Halloween, 'Boo in the Burg' offers special shopping and food specials for patrons. An annual bicycle race known as 'Tour D'Burg' is also held every summer in the downtown area.</p>
+            <ul><u>Other events include:</u>
+                <li>Miamisburg Starving Artists (Open air arts and crafts show)</li>
+                <li>Christmas Starving Artists (November indoor arts and crafts show)</li>
+                <li>Miamisburg Turkey Trot (Thanksgiving Day 8K Run/Walk)</li>
+                <li>Cruise the Burg (Auto show)</li>
+                <li>Thunderburg (Motorcycle show)</li>
+            </ul>
+            <center><img src="images/thunderburg.jpg"><img src="images/turkey.jpg"><img src="images/springfling.jpg"></center>
+            <br />
+        </section>
+        
+        <!-- Aside secion -->
+        <aside>
+            <section class="related-links">
+                <h2></h2>
+                <p>Other Links:</p>
+                <a href="http://exploremiamisburg.com/" style="padding-top: 0px;">Explore Miamisburg</a>
+                <a href="https://www.tripadvisor.com/Hotels-g50644-Miamisburg_Ohio-Hotels.html">Accomodations</a>
+                <a href="http://miamisburg.org/miamisburg_historical_society.htm">Historical Society</a>
+                <a href="http://miamisburgathletics.com/">Athletics</a>
+                <a href="https://www.tripadvisor.com/Restaurants-g50644-Miamisburg_Ohio.html">Places to Eat</a>
+            </section>
+        </aside>
+        
+        <!-- Footer section -->
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Information</a></li>
+                    <li><a href="government.html">Government</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    
+</body>
+    
+
+</html>

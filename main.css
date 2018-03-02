@@ -1,0 +1,234 @@
+header, section, footer, aside, nav, article, figure, figcaption {
+    display: block;}
+body {
+    background-image: url("images/clouds.jpg");
+    font-family: Georgia, Times, serif;
+    line-height: 1.4em;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 20px auto;
+    border: 2px solid black;
+    background-color: #ffffff;
+}
+
+/* header css */
+header {
+    height: 120px;
+    font-size: 120%;
+}
+
+header h3 {
+    padding: 35px 0px 5px 30px;
+    color: blue;
+}
+
+header img {
+    float: right;
+    height: 110px;
+    width: 150px;
+}
+
+/* nav css */
+nav, footer {
+    clear: both;
+    color: #ffffff;
+    background-color: #aeaca8;
+    height: 30px;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.top li, .bottom li{
+    line-height: 100%;
+}
+
+nav li a {
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav li a:hover, nav li a.current {
+    color: blue;
+}
+
+/* section and article css */
+section.content {
+    float: left;
+    width: 660px;
+    border-right: 1px solid #eeeeee;
+    margin-top: 40px;
+}
+
+article {
+    overflow: auto;
+    width: 100%;
+}
+
+article p {
+    padding: 10px 10px 5px 10px;
+}
+
+figure {
+    float: left;
+}
+
+/* aside css */
+aside {
+    width: 230px;
+    float: right;
+    padding: 0px 0px 0px 20px;
+}
+
+aside section a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+aside p {
+    padding: 10px 10px 10px 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+aside section a:hover {
+    color: black;
+}
+
+aside .related-links a:visited {
+    color: blue;
+}
+
+aside .related-links a:hover {
+    color: black;
+}
+
+/* footer css */
+footer ul {
+    font-size: 80%;
+}
+
+/* slider css */
+#outerbox {
+    width: 640px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sliderbox {
+    position: relative;
+    width: 2250px;
+    margin-left: 140px;
+}
+
+#slideshow_image { 
+	display: none;
+}
+
+/* contact form css */
+.thankyou {
+    background-image: url(images/IMG_1601.JPG);
+    background-size: cover;
+}
+
+.thankyou a {
+    color: white;
+    text-decoration: underline;
+}
+
+.box { 
+    color: aliceblue;
+    float: right;
+    font-size: 150%;
+    min-height: 500px;
+    margin-top: 10em; 
+    width: 500px;
+    text-align: center;
+    font-family: Inconsolata-dz, Consolas, monaco, monospace; 
+    border-top: solid;
+}
+
+.container {
+    margin:0 auto;
+    max-width:1280px;
+    width:90%;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: lightblue;
+}
+
+
+/*FAQ page CSS code*/ 
+#faqh3 {
+	font-size: 100%;
+	padding: .25em 0 .25em 60px;
+	cursor: pointer;    
+}
+h3.plus {
+	background: url(images/plus.png) no-repeat left center;
+    background-position: 5%;
+}
+h3.minus {
+	background: url(images/minus.png) no-repeat left center;
+    background-position: 5%;
+}
+
+div.closed {
+	display: none;
+}
+div.open {
+	display: block;
+    font-size: 100%;
+	padding-left: 60px;
+}
+
+/* Image Swap CSS */
+#gallery {
+    width: 659px;
+    border-right: 1px solid #eeeeee;
+}
+
+#image_list {
+	padding-right: 30px;
+}
+
+#swaps {
+    padding-right: 10px;
+    display: inline;
+}

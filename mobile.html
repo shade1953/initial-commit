@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <title>Home mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+     <script>
+        window.onload = function() {
+            var links = document.getElementById("slideshow_image").getElementsByTagName("a");
+            var counter = 0;
+            var timer = setInterval( function() {
+                counter = (counter + 1) % links.length;
+                document.getElementById("new_image").src = links[counter].href;
+            }, 3000);
+        }
+    </script>
+    <style>
+        #slideshow_image{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+	<!-- HOME -->
+	<div data-role="page" id="home">
+    	<header data-role="header">
+        	<h1 style="display: none;">Mobile Site</h1>
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#information" data-icon="star" data-theme="b">Information</a></li>
+                    <li><a href="#members" data-icon="user" data-theme="b">Deveolpment</a></li>
+	            	<li><a href="#contact" data-icon="grid" data-theme="b">Contact Us</a></li>
+				</ul>
+	    	</div>
+    	</header>
+    	<section data-role="content" style="text-align:center">
+			<h2><strong style="color: blue">Welcome to Miamisburg:</strong> The Ofiicial Website of Miamisburg, Ohio!</h2>
+	    	<p>Thanks for visiting our website! Here you can find all kinds of information about the city, how you can contact the city, view some frequently asked questions about Miamisburg, as well as so much more! Please enjoy browsing the site and we hope to see you soon! Here are just some of the beautiful views you can see when you can come visit:</p>
+	    	
+             <div id="outerbox">
+                    <div id="sliderbox">
+                        <img src="images/arch.jpg" alt="" id="new_image">
+                    </div>
+                </div>
+            
+             <ul id="slideshow_image">
+                    <li><a href="images/arch.jpg"></a></li>
+                    <li><a href="images/market.jpg"></a></li>
+                    <li><a href="images/mural.jpg"></a></li>
+                    <li><a href="images/dtown.JPG"></a></li>
+                    <li><a href="images/mound.jpg"></a></li>
+                    <li><a href="images/plaza.jpg"></a></li>
+                </ul>            
+            <hr>
+            
+	    	<h3>Events</h3>
+            <p>Check out our community events!</p>
+            <p>Numerous community events are held during the year, such as live music and block parties. Every spring, 'Spring Break in the Burg' and the 'Spring Fling' festival is held downtown in Library Park. On Halloween, 'Boo in the Burg' offers special shopping and food specials for patrons. An annual bicycle race known as 'Tour D'Burg' is also held every summer in the downtown area.</p>
+	    	
+            <div style="text-align:left">
+            <p><u>Other Events Include:</u></p>
+            <ul>
+            <li>Miamisburg Starving Artists (Open air arts and crafts show)</li>  
+            <li>Christmas Starving Artists (November indoor arts and crafts show)</li> 
+            <li>Miamisburg Turkey Trot (Thanksgiving Day 8K Run/Walk)</li>   
+            <li>Cruise the Burg (Auto show)</li> 
+            <li>Thunderburg (Motorcycle show)</li>    
+            </ul> 
+            </div>   
+            
+            <img src="images/thunderburg.jpg" style="height:80px"><img src="images/turkey.jpg" style="height:80px"><img src="images/springfling.jpg" style="height:80px">   
+            
+            <hr>
+            
+            <p>Other Links:</p>
+                <a href="http://exploremiamisburg.com/" style="padding-top: 0px;">Explore Miamisburg</a>
+                |
+                <a href="https://www.tripadvisor.com/Hotels-g50644-Miamisburg_Ohio-Hotels.html">Accomodations</a>
+                |
+                <a href="http://miamisburg.org/miamisburg_historical_society.htm">Historical Society</a>
+                |
+                <a href="http://miamisburgathletics.com/">Athletics</a>
+                |
+                <a href="https://www.tripadvisor.com/Restaurants-g50644-Miamisburg_Ohio.html">Places to Eat</a>
+    	</section>
+    	<footer data-role="footer">
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#information" data-icon="star" data-theme="b">Information</a></li>
+                    <li><a href="#members" data-icon="user" data-theme="b">Deveolpment</a></li>
+	            	<li><a href="#contact" data-icon="grid" data-theme="b">Contact Us</a></li>
+				</ul>
+	    	</div>
+    	</footer>
+	</div>
+    
+    <!-- Information -->
+    <div data-role="page" id="information">
+    	<header data-role="header">
+        	<h1 style="display: none;">Mobile Site</h1>
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+					<li><a href="#information" data-icon="star" class="ui-btn-active">Information</a></li>
+                    <li><a href="#members" data-icon="user" data-theme="b">Deveolpment</a></li>
+	            	<li><a href="#contact" data-icon="grid" data-theme="b">Contact Us</a></li>
+				</ul>
+			</div>
+    	</header>
+    	<section data-role="content" style="text-align:center">
+        
+            
+			<h2><strong style="color: blue">Information About Miamisburg</strong></h2>
+            
+            <img src="images/mburg.jpg">
+            
+	    	<p>Located just south of Dayton, Ohio, Miamisburg was incorporated as a city into the United States in 1818. Miamisburg gets its name as it is located along the Miami River. The city is most well-known for its involvement in World War II, where it housed secret operations for the War Department in Mound Laboratories. The work of making plutonium detonators was part of the classified work done in these labs. Miamisburg is also known for the Miamisburg Mound, which is a prehistoric Indian burial mound, believed to be built by the Adena Culture. The mound stands at a whopping 68 feet tall with circumference of 852 feet. You can take the 116 concrete steps to the top and get a breath-taking view of the city. The lively downtown Miamisburg is where all kinds of activities take place, such as concerts, dancing in the streets, the Green Tomato Festival, and so many more! All events are family friendly, as it is a great place for your night out.</p>
+            
+            
+	    	<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1536.178160818802!2d-84.28854062291406!3d39.64169471742063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88406280ba67528d%3A0xe5a168f145622f7!2sMiamisburg%2C+OH!5e0!3m2!1sen!2sus!4v1506203757665" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+            
+            <hr>
+            
+            <p>Other Links:</p>
+                <a href="http://exploremiamisburg.com/" style="padding-top: 0px;">Explore Miamisburg</a>
+                |
+                <a href="https://www.tripadvisor.com/Hotels-g50644-Miamisburg_Ohio-Hotels.html">Accomodations</a>
+                |
+                <a href="http://miamisburg.org/miamisburg_historical_society.htm">Historical Society</a>
+                |
+                <a href="http://miamisburgathletics.com/">Athletics</a>
+                |
+                <a href="https://www.tripadvisor.com/Restaurants-g50644-Miamisburg_Ohio.html">Places to Eat</a>
+	    	
+    	</section>
+    
+    	<footer data-role="footer">
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+					<li><a href="#information" data-icon="star" class="ui-btn-active">Information</a></li>
+                    <li><a href="#members" data-icon="user" data-theme="b">Deveolpment</a></li>
+	            	<li><a href="#contact" data-icon="grid" data-theme="b">Contact Us</a></li>
+				</ul>
+	    	</div>
+    	</footer>
+	</div>
+    
+    <!-- Members -->
+    <div data-role="page" id="members">
+    	<header data-role="header">
+            <h1 style="display: none;">Mobile Site</h1>
+            <div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+					<li><a href="#information" data-icon="star" data-theme="b">Information</a></li>
+                    <li><a href="#members" data-icon="user" class="ui-btn-active">Deveolpment</a></li>
+	            	<li><a href="#contact" data-icon="grid" data-theme="b">Contact Us</a></li>
+				</ul>
+	    	</div>
+            <h1>Development Team</h1>
+    	</header>       
+        <section data-role="content">
+			<div class="content-primary">
+                 <p>Meet Our Website Developmet Team</p>
+				<ul data-role="listview" data-inset="true" data-filter="true">
+                    <li data-role="list-divider">Team Leader</li>
+                	<li>
+                    	<a href="#">
+                    		<img src="images/Ben.jpg" alt="Ben">
+                    		<h3>Ben Roth</h3>
+                    		<p>Computer Science / IMS Co-Major</p>
+                    	</a>
+                    	<a href="#ben" data-rel="dialog" data-transition="pop" title="Contact Us"></a>
+                	</li>
+        
+        <li data-role="list-divider">Members</li>
+					<li>
+                    	<a href="#">
+                    		<img src="images/Nigel.JPG" alt="Nigel">
+                    		<h3>Nigel Adams</h3>
+                    		<p>Interactive Media Studies</p>
+                    	</a>
+                    	<a href="#nigel" data-rel="dialog" data-transition="pop" title="Contact Us">Contact Us</a>
+                	</li>
+                	<li>
+                    	<a href="#">
+                    		<img src="images/Shuo.JPG" alt="Shuo">
+                    		<h3>Shuo Han</h3>
+                    		<p>Media and Culture / IMS Co-Major</p>
+                    	</a>
+                    	<a href="#shuo" data-rel="dialog" data-transition="pop" title="Contact Us">Contact Us</a>
+                	</li>
+            
+
+                	<li>
+                    	<a href="#">
+                    		<img src="images/Olivia.JPG" alt="Olivia">
+                    		<h3>Olivia Shade</h3>
+                    		<p>Computer Engineering</p>
+                    	</a>
+                    	<a href="#olivia" data-rel="dialog" data-transition="pop" title="Contact Us">Contact Us</a>
+                	</li>
+            
+            	</ul>
+			</div>
+    	</section>
+    
+    	<footer data-role="footer">
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+					<li><a href="#information" data-icon="star" data-theme="b">Information</a></li>
+                    <li><a href="#members" data-icon="user" class="ui-btn-active">Deveolpment</a></li>
+	            	<li><a href="#contact" data-icon="grid" data-theme="b">Contact Us</a></li>
+				</ul>
+	    	</div>
+    	</footer>
+	</div>
+
+    <div data-role="page" id="ben">
+    	<header data-role="header">
+        	<h1>Development Team</h1>
+    	</header>
+    
+    	<section data-role="content"> 
+		 		<h3>Ben Roth</h3>
+            	<img src="images/Ben.jpg" alt="Ben" style="height: 300px">
+            	<h4>Ben Roth<br>Computer Science / IMS Co-Major</h4>
+            	<p> Ben is a Sophmore at Miami University. He is currently studying Computer Science and Interactive Media Studies. He is originally from Miamisburg, Ohio.</p>
+            	<a href="mailto:rothbr@miamioh.edu" data-role="button" class="ui-bar" data-icon="plus" >Email Ben</a>
+                 <a href="#home" data-direction="reverse" data-role="button" data-icon="back">Back</a>
+			</section>
+    
+    	<footer data-role="footer">
+        	<h4>&copy; 2017</h4>
+    	</footer>
+    </div>
+    
+    <div data-role="page" id="nigel">
+    	<header data-role="header">
+        	<h1>Development Team</h1>
+    	</header>
+    
+    	<section data-role="content"> 
+		 		<h3>Nigel Adams</h3>
+            	<img src="images/Nigel.JPG" alt="Nigel" style="height: 300px">
+            	<h4>Nigel Adams<br>Interactive Media Studies</h4>
+            	<p> Nigel is a Sophmore at Miami University. He is currently studying Interactive Media Studies. He is originally from Lawrenceville, Georgia.</p>
+            	<a href="mailto:adamsno@miamioh.edu" data-role="button" class="ui-bar" data-icon="plus" >Email Nigel</a>
+                 <a href="#home" data-direction="reverse" data-role="button" data-icon="back">Back</a>s
+			</section>
+    
+    	<footer data-role="footer">
+        	<h4>&copy; 2017</h4>   
+    	</footer>
+    </div>
+    
+    <div data-role="page" id="shuo">
+    	<header data-role="header">
+        	<h1>Development Team</h1>
+    	</header>
+    
+    	<section data-role="content"> 
+		 		<h3>Shuo Han</h3>
+            	<img src="images/Shuo.JPG" alt="Shuo" style="height: 300px">
+            	<h4>Shuo Han<br>Media and Culture / IMS Co-Major</h4>
+            	<p> Shuo is a Sophmore at Miami University. She is currently Media and Culture with an Interactive Media Studies CoMajor. She is originally from Tianjin, China.</p>
+            	<a href="mailto:hans6@miamioh.edu" data-role="button" class="ui-bar" data-icon="plus" >Email Shuo</a>
+                 <a href="#home" data-direction="reverse" data-role="button" data-icon="back">Back</a>
+			</section>
+    
+    	<footer data-role="footer">
+        	<h4>&copy; 2017</h4>
+    	</footer>
+    </div>
+    
+    <div data-role="page" id="olivia">
+    	<header data-role="header">
+        	<h1>Development Team</h1>
+    	</header>
+    
+    	<section data-role="content"> 
+		 		<h3>Olivia Shade</h3>
+            	<img src="images/Olivia.JPG" alt="Ben">
+            	<h4>Olivia Shade<br>Computer Engineering</h4>
+            	<p> Olivia is a Sophmore at Miami University. She is currently studying Computer Engineering with an Interactive Media Studies and Computer Science minor. She is originally from Westerville, Ohio.</p>
+            	<a href="mailto:shadeor@miamioh.edu" data-role="button" class="ui-bar" data-icon="plus" >Email Olivia</a>
+                 <a href="#home" data-direction="reverse" data-role="button" data-icon="back">Back</a>
+			</section>
+    
+    	<footer data-role="footer">
+        	<h4>&copy; 2017</h4>
+    	</footer>
+    </div>
+    
+    <!-- Contact -->
+    <div data-role="page" id="contact">
+    	<header data-role="header">
+            <h1 style="display: none;">Mobile Site</h1>
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+					<li><a href="#information" data-icon="star" data-theme="b">Information</a></li>
+                    <li><a href="#members" data-icon="user" data-theme="b">Deveolpment</a></li>
+	            	<li><a href="#contact" data-icon="grid"class="ui-btn-active">Contact Us</a></li>
+				</ul>
+	    	</div>
+    	</header>
+    	<section data-role="content" style="text-align:center">
+			<h2><strong style="color: blue">Contact Information</strong></h2>
+	    	
+            <div style="text-align:left">
+            <form action="thankyou.html">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" class="validate" placeholder="Your e-mail.." required>
+
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+
+            <input type="submit" value="Submit">
+            </form> 
+            </div>    
+            
+            <p>Or contact us another way! Send us a letter, call or e-mail us here: <br />Miamisburg Civic Center 10 North First Street, Miamisburg OH 45342.<br /><strong>phone:</strong> 937.866.3303 | <strong>fax:</strong> 937. 866. 0891 | <strong>email:</strong> manager@cityofmiamisburg.org </p>
+            
+            <hr>
+            
+            <p>Other Links:</p>
+                <a href="http://exploremiamisburg.com/" style="padding-top: 0px;">Explore Miamisburg</a>
+                |
+                <a href="https://www.tripadvisor.com/Hotels-g50644-Miamisburg_Ohio-Hotels.html">Accomodations</a>
+                |
+                <a href="http://miamisburg.org/miamisburg_historical_society.htm">Historical Society</a>
+                |
+                <a href="http://miamisburgathletics.com/">Athletics</a>
+                |
+                <a href="https://www.tripadvisor.com/Restaurants-g50644-Miamisburg_Ohio.html">Places to Eat</a>
+	    	
+    	</section>
+    	<footer data-role="footer">
+        	<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+					<li><a href="#information" data-icon="star" data-theme="b">Information</a></li>
+                    <li><a href="#members" data-icon="user" data-theme="b">Deveolpment</a></li>
+	            	<li><a href="#contact" data-icon="grid" class="ui-btn-active">Contact Us</a></li>
+				</ul>
+	    	</div>
+    	</footer>
+	</div>
+    
+</body>
+</html>

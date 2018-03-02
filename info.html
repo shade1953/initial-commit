@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Information</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+          $("#burg").click(function() { 
+              $( "#dialog" ).dialog({
+                  autoOpen: true,
+                  show: {
+                    effect: "blind",
+                    duration: 1000
+                  },
+                  hide: {
+                    effect: "bounce",
+                    duration: 1000
+                  }
+              });
+          });
+        } );
+      </script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header section -->
+        <header>
+            <img src="images/miamisburg.jpg">
+            <h3>Information About Miamisburg</h3>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Information</a></li>
+                    <li><a href="government.html">Government</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Main content section -->
+        <section class="content">
+            <article>
+                <figure>
+                    <a id="burg"><img src="images/mburg.jpg"></a>
+                    <p style="text-align: center; font-size: 10px;">Click The Picture</p>
+                    <div id="dialog" title="" style="display: none">
+                        <p>Downtown Miamisburg</p>
+                    </div>
+                </figure>
+                <p>Located just south of Dayton, Ohio, Miamisburg was incorporated as a city into the United States in 1818. Miamisburg gets its name as it is located along the Miami River. The city is most well-known for its involvement in World War II, where it housed secret operations for the War Department in Mound Laboratories. The work of making plutonium detonators was part of the classified work done in these labs. Miamisburg is also known for the Miamisburg Mound, which is a prehistoric Indian burial mound, believed to be built by the Adena Culture. The mound stands at a whopping 68 feet tall with circumference of 852 feet. You can take the 116 concrete steps to the top and get a breath-taking view of the city. The lively downtown Miamisburg is where all kinds of activities take place, such as concerts, dancing in the streets, the Green Tomato Festival, and so many more! All events are family friendly, as it is a great place for your night out.</p>
+            </article>
+            <br />
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1536.178160818802!2d-84.28854062291406!3d39.64169471742063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88406280ba67528d%3A0xe5a168f145622f7!2sMiamisburg%2C+OH!5e0!3m2!1sen!2sus!4v1506203757665" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+            <br />
+        </section>
+        
+        <!-- Aside secion -->
+        <aside>
+            <section class="related-links">
+                <h2></h2>
+                <p>Other Links:</p>
+                <a href="http://exploremiamisburg.com/" style="padding-top: 0px;">Explore Miamisburg</a>
+                <a href="https://www.tripadvisor.com/Hotels-g50644-Miamisburg_Ohio-Hotels.html">Accomodations</a>
+                <a href="http://miamisburg.org/miamisburg_historical_society.htm">Historical Society</a>
+                <a href="http://miamisburgathletics.com/">Athletics</a>
+                <a href="https://www.tripadvisor.com/Restaurants-g50644-Miamisburg_Ohio.html">Places to Eat</a>
+            </section>
+        </aside>
+        
+        <!-- Footer section -->
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Information</a></li>
+                    <li><a href="government.html">Government</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    
+</body>
+    
+
+</html>

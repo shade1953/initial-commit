@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Government</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="main.css">
+    <script>
+        window.onload = function() {
+            var imageLinks = document.getElementById("image_list").getElementsByTagName("a");
+            
+            for (i = 0; i < imageLinks.length; i++) {
+                imageLinks[i].onclick = function(evt) {
+                    document.getElementById("image").src = this.getAttribute("href");
+                    document.getElementById("caption").firstChild.nodeValue = this.getAttribute("title");
+                    
+                    evt.preventDefault();
+                }
+            }
+            var image = new Image();
+            image.src = imageLinks[i].getAttribute("href");
+        }
+	</script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header section -->
+        <header>
+            <img src="images/miamisburg.jpg">
+            <h3>Miamisburg's Government</h3>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Information</a></li>
+                    <li><a href="government.html">Government</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Main content section -->
+        <section class="content">
+            <article>
+                <h3 style="text-align: center;">Local Government</h3>
+                <p>Local voters in 1966 adopted a City charter that established a Council/Manager form of government for the City of Miamisburg. Under this form, City Council holds legislative authority and establishes the policies that govern the City. Council appoints a city manager to carry out those policies and oversee the day-to-day operation of the City.</p>
+                <p>Miamisburg City Council consists of seven elected members who serve staggered four-year terms. Three of these members are elected at-large, while four are elected as representatives of the City's four wards. The mayor is elected separately from Council and serves as ceremonial head of government. The mayor presides over Council meetings, but does not vote on legislative matters, except in the event of a tie. In addition to the city manager, Council also is responsible for appointing the clerk of council, the law director and the prosecutor. The city manager is responsible for all other staffing.</p>
+                <center><img src="images/civic.jpg"></center>
+                <h3 style="text-align: center;">City Council</h3>
+                <p>Miamisburg City Council holds regularly scheduled meetings on the first and third Tuesdays of every month at 6 p.m. in the Robert H. Mears, Sr., Miamisburg Civic Center. Meetings are cablecast live and recast unedited by the Miami Valley Communications Council on channel 5 of the Spectrum system.</p>
+                <p>After traditional opening procedures, meetings typically begin with special presentations made by or for City Council. A Citizens Forum is then provided for anyone in attendance to address Council. Speakers should approach the podium next to the head table and state their name and address before making comments, which are limited to five minutes. At the conclusion of the Citizens Forum, City staff members begin presenting to Council the legislative items on the agenda for official action. Before the meeting adjourns, each member of the head table is afforded an opportunity to make closing comments.</p>
+                <p>City Council may schedule an executive session as needed to discuss personnel issues, legal matters or the purchase of real estate.  Executive sessions are usually held before or after regularly scheduled meetings in the Civic Center conference room and are closed to the public. Council normally holds a study session following regular meetings to discuss future legislation and other matters for their consideration. These meetings are also held in the Civic Center conference room and are open to the public.</p>
+                <h3 style="text-align: center;">Meet the council:</h3>
+                <section id ="gallery">
+                    <center><ul id="image_list">
+                        <li id="swaps"><a href="images/churchs.jpg"  title="Dick Church - Mayor" id="first_link">
+                            <img src="thumbnails/church.jpg" alt=""></a></li>
+                        <li id="swaps"><a href="images/collinscrop.jpg" title="Michelle Collins - At-large">
+                            <img src="thumbnails/collins.jpg" alt=""></a></li>
+                        <li id="swaps"><a href="images/clarks.jpg" title="Sarah Clark - Second Ward">
+                            <img src="thumbnails/clark.jpg" alt=""></a></li>
+                        <li id="swaps"><a href="images/colvincrop.jpg" title="Ryan Colvin - At-large">
+                            <img src="thumbnails/colvins.jpg" alt=""></a></li>
+                        <li id="swaps"><a href="images/mccabe.jpg" title="Mike McCabe - Vice Mayor">
+                            <img src="thumbnails/mccabes.jpg" alt=""></a></li>
+                        <li id="swaps"><a href="images/thompson.jpg" title="Greg Thompson - At-large">
+                            <img src="thumbnails/thompsons.jpg" alt=""></a></li>
+                    </ul> 
+                    <p><img src="images/churchs.jpg" alt="" id="image"></p>
+                    <h4 id="caption">Dick Church - Mayor</h3>
+                    </center>
+                </section>
+                <br />
+            </article>
+        </section>
+        
+        <!-- Aside secion -->
+        <aside>
+            <section class="related-links">
+                <h2></h2>
+                <p>Other Links:</p>
+                <a href="http://exploremiamisburg.com/" style="padding-top: 0px;">Explore Miamisburg</a>
+                <a href="https://www.tripadvisor.com/Hotels-g50644-Miamisburg_Ohio-Hotels.html">Accomodations</a>
+                <a href="http://miamisburg.org/miamisburg_historical_society.htm">Historical Society</a>
+                <a href="http://miamisburgathletics.com/">Athletics</a>
+                <a href="https://www.tripadvisor.com/Restaurants-g50644-Miamisburg_Ohio.html">Places to Eat</a>
+            </section>
+        </aside>
+        
+        <!-- Footer section -->
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Information</a></li>
+                    <li><a href="government.html">Government</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    
+</body>
+    
+
+</html>
